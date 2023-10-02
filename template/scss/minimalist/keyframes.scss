@@ -1,0 +1,78 @@
+@keyframes loading {
+   to{
+      rotate: 360deg;
+   }
+}
+@keyframes animateLoading {
+   0%,100%{
+      stroke-dashoffset: 440;
+   }
+   50%{
+         stroke-dashoffset: 0;
+   }
+   50.1%{
+         stroke-dashoffset: 880;
+   }
+}
+
+@keyframes success {
+   0% {
+      transform: rotateY(360deg);
+  }
+
+  15% {
+
+      transform: rotateY(180deg);
+
+  }
+
+  30% {
+      transform: rotateY(360deg);
+
+  }
+
+  70% {
+      bottom: 0px;
+  }
+
+  85% {
+      bottom: 65px;
+
+  }
+
+  100% {
+      bottom: 0px;
+
+  }
+}
+
+@keyframes tremer {
+    0% {
+        transform: translateX(0%);
+    }
+
+    15% {
+        transform: translateX(-2.5%);
+    }
+
+    30% {
+        transform: translateX(2.25%);
+    }
+
+    45% {
+        transform: translateX(-2%);
+    }
+
+    60% {
+        transform: translateX(1.5%);
+    }
+
+    75% {
+        transform: translateX(-1%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}

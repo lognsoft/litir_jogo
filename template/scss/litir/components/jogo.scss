@@ -1,0 +1,190 @@
+.jogoAtivo{
+   #jogo{
+      .atualizacao-container{
+         padding: 0 2%;
+         position: fixed;
+         width: 100%;
+         height: 100%;
+         background-color: rgb(0, 0, 0, 0.7);
+         backdrop-filter: blur(3px);
+         -webkit-backdrop-filter: blur(3px);
+         z-index: 10000;
+         left: 0;
+         top: 0;
+         display: none;
+         align-items: center;
+         justify-content: center;
+
+         .msgRankAtualizou{
+            position: relative;
+            bottom: 25%;
+            padding: 10px 20px;
+            background-color: #6962a6;
+            border-radius: 20px;
+            border-bottom: 5px solid #4b4563;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $whiteLetter;
+            font-size: 20px;
+      
+            svg{
+               width: 50px;
+               height: 50px;
+               animation: loading 700ms linear infinite;
+               circle{
+                  position: relative;
+                  transform: translate(5px,5px);
+                  fill: none;
+                  stroke-width: 3;
+                  stroke: $whiteLetter;
+                  stroke-dasharray: 440;
+                  stroke-dashoffset: 440;
+                  animation: animateLoading 6s linear infinite;
+               }
+            }
+         }
+      }
+   
+      #box-ul-container{
+         width: 100%;
+         max-width: 60%;
+         margin: 0 auto;
+         display: flex;
+         align-items: center;
+         flex-wrap: wrap;
+         gap: 5px;
+   
+         ul{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            list-style-type: none;
+            li{
+               user-select: none;
+               -webkit-user-select: none;
+               -moz-user-select: none;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               font-size: 5vmin;
+               text-transform: uppercase;
+               cursor: pointer;
+               width: 7vb;
+               min-width: 5.8vb;
+               background: #fff;
+               background-position: center !important;
+               background-repeat: no-repeat !important;
+               background-size: contain !important;
+               aspect-ratio: 1 / 1;
+               color: $black !important;
+               border-radius: 11px;
+               border-bottom: 4px solid #ccc;
+
+               &.active,
+               &.letraIncorreta,
+               &.letraCorretaLugarErrado,
+               &.letraCorretaLugarCerto{
+                  background-repeat: no-repeat !important;
+                  background-size: 100% 100% !important;
+                  position: relative;
+                  &:before{
+                     content: '';
+                     width: 5px;
+                     height: 10px;
+                     position: absolute;
+                     right: 3px;
+                     top: 3px;
+                     rotate: -30deg;
+                     border-radius: 50%;
+                  }
+               }
+
+               &.active{
+                  background-color: #e76c9c !important;
+                  -webkit-text-stroke: 1px #a84f71;
+                  background-size: 100% 100%;
+                  color: $white !important;
+                  scale: 1.2;
+                  border-bottom: 4px solid #c45c84 !important;
+                  z-index: 1;
+                  &:before{
+                     background-color: #ffa0c5;
+                  }
+               }
+
+               &.letraIncorreta{
+                  background-image: $bgBoxErr !important;
+                  background-color: transparent !important;
+                  -webkit-text-stroke: 1px #666;
+                  &:before{
+                     background-color: #dcdcdc;
+                  }
+               }
+
+               &.letraCorretaLugarErrado{
+                  background-image: $bgBoxLetterRed !important;
+                  background-color: transparent !important;
+                  -webkit-text-stroke: 1px #a7484c;
+                  &:before{
+                     background-color: #f3b4af;
+                  }
+               }
+               &.letraCorretaLugarCerto{
+                  background-color: #91bb15 !important;
+                  border-bottom: 4px solid #759b14 !important;
+                  -webkit-text-stroke: 1px #698b11;
+                  border-radius: 13px;
+                  color: $whiteLetter !important;
+                  &:before{
+                     background-color: #cbdf9c;
+                  }
+               }
+
+               &.LetraAnimacaoEnter{
+                  animation: success 1.3s linear;
+               }
+            }
+
+            &.LetraAnimacaoErrou{
+               animation: tremer 0.4s linear;
+
+               li{
+                  box-shadow: 0px 0px 0px #e76c9c,
+                  0px 0px 0px rgb(255, 104, 104),
+                  0px 0px 0px rgb(254, 157, 157);
+                  animation: error 0.5s linear;
+               }
+            }
+
+            &.off{
+               li{
+                  background: #acacac5c;
+                  cursor: initial;
+                  color: $whiteLetter!important;
+                  border: none;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 768px){
+   .jogoAtivo{   
+   
+      #jogo{
+
+         #box-ul-container{
+            ul{
+               li{
+                  width: 6vb;
+                  font-size: 35px;
+               }
+            }
+         }
+      }
+   }
+}

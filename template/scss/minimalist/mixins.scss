@@ -1,0 +1,24 @@
+@mixin button($color:$black,$bg:$blue){
+   padding: 10px 15px;
+   background-color: $bg;
+   border: 1px solid $black;
+   cursor: pointer;
+   display: inline-block;
+   border-radius: 5px;
+   color: $color;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+}
+
+@mixin painel(){
+   border-radius: 5px;
+   background-color: $blue;
+   color: $black;
+   width: 100%;
+   max-width: 400px;
+   min-height: 200px;
+   max-height: 400px;
+   overflow: auto;
+   padding: 20px;
+}

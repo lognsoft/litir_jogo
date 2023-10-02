@@ -1,0 +1,230 @@
+{
+    "palavras_e_dicas": [
+      {
+        "palavra": "SUBLIME",
+        "dica": "Que é de uma beleza ou grandeza extraordinária; esplêndido.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SOBERBA",
+        "dica": "Sentimento de orgulho excessivo; arrogância; altivez.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SUCESSO",
+        "dica": "Resultado favorável de algo; êxito; prosperidade.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SENSATO",
+        "dica": "Que age com sensatez; prudente; razoável.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SENTIDO",
+        "dica": "Significado; compreensão; orientação; percepção.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SÍMBOLO",
+        "dica": "Representação gráfica ou objetiva de algo abstrato; ícone.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SAZONAL",
+        "dica": "Que ocorre ou é próprio de uma determinada estação ou época do ano.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SAGRADO",
+        "dica": "Relativo ao que é considerado divino ou venerável.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SURREAL",
+        "dica": "Que parece fazer parte de um sonho ou de uma realidade imaginária.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SUPERAR",
+        "dica": "Ultrapassar; vencer; dominar; transpor.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SINTAXE",
+        "dica": "Parte da gramática que estuda a disposição das palavras na frase.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SUMÁRIO",
+        "dica": "Resumo; síntese; lista dos conteúdos de uma obra.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SEGUNDO",
+        "dica": "Que vem logo após o primeiro.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SOSSEGO",
+        "dica": "Tranquilidade; calma; ausência de perturbação ou agitação.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SOLIDÃO",
+        "dica": "Estado de estar só; isolamento; ausência de companhia.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SUPREMO",
+        "dica": "Que está no mais alto grau; máximo; excelso; soberano.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "SÁDICO",
+        "dica": "Que sente prazer ao provocar sofrimento em outros; cruel.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SÓBRIO",
+        "dica": "Comedido; moderado; equilibrado; sóbrio.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SANÇÃO",
+        "dica": "Aprovação ou autorização oficial de uma lei ou norma; penalidade.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SEMPRE",
+        "dica": "Em todos os momentos; em qualquer tempo; eternamente.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SERVIR",
+        "dica": "Prestar serviço a alguém; atender às necessidades de alguém.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SERENO",
+        "dica": "Tranquilo; calmo; sereno.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SÚDITO",
+        "dica": "Pessoa subordinada a um rei ou soberano; cidadão.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SENHOR",
+        "dica": "Título de respeito; homem mais velho; proprietário.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SUPRIR",
+        "dica": "Prover o que é necessário; abastecer; satisfazer.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SÍNICO",
+        "dica": "Que age com hipocrisia; falso; dissimulado.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SIGILO",
+        "dica": "Segredo; confidência; reserva.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SERRAR",
+        "dica": "Cortar algo usando uma serra; serrar.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SÓLIDO",
+        "dica": "Que tem consistência firme; estável.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SÊNIOR",
+        "dica": "Que está em um nível mais avançado de idade, experiência ou hierarquia.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SALVAR",
+        "dica": "Tirar alguém ou algo de perigo ou dano; socorrer.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "SAGAZ",
+        "dica": "Que é astuto; esperto; perspicaz.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "SUTIL",
+        "dica": "Que é delicado; leve; suave; fino.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "SONHO",
+        "dica": "Estado de consciência durante o sono; aspiração; ideal.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "SAÚDE",
+        "dica": "Estado de completo bem-estar físico, mental e social.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "SÁBIA",
+        "dica": "Mulher que possui grande sabedoria; erudita.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "SELAR",
+        "dica": "Fechar ou lacrar algo com selo ou lacre; autenticar.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "SEITA",
+        "dica": "Grupo ou comunidade religiosa com doutrinas específicas.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "SIGNO",
+        "dica": "Símbolo gráfico; característica de uma pessoa nascida em determinado período astrológico.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "SÉRIE",
+        "dica": "Conjunto de coisas ou eventos que se sucedem.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "SONSO",
+        "dica": "Que age com hipocrisia; fingido.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "SALVO",
+        "dica": "Que foi resgatado; a salvo; salvo.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "SINAL",
+        "dica": "Indicação ou marca usada para transmitir informações; sintoma.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "SUMIR",
+        "dica": "Desaparecer; deixar de ser visto; ocultar-se.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "SÍTIO",
+        "dica": "Pequena propriedade rural; local isolado e agradável.",
+        "tamanho": 5
+      }
+    ]
+  }
+  

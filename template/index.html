@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="termoo,palavras,jogo,lógica"/>
+    <meta name="description" content="teste o número de palavras que vc conhece jogando contra outros jogadores"/>
+    <title>Litir</title>
+    <link rel="shortcut icon" href="public/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link id="style" rel="stylesheet" href="css/litir/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- Importa a fonte "Roboto" do Google Fonts -->
+    <!-- <script type="text/javascript"
+        src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=d2L6433VqLGBP1fSQqmeR5xQUNE71_zRrXYneNbi_AcIlOq3sqdnk39Fh_AwgY8TbVGhHJ92E7DOoX_zGw7Q2IycAD6rEt1E2SDeywz6T6Y-ujXOmTyBCz0Mi8Zr_o8mw7GycYFSAztzVKDFDyZczg"
+        charset="UTF-8"></script> -->
+</head>
+
+<body>
+    <div class="apresentacao" id="apresentacao">
+        <div class="box-apresentacao">
+            <h2 id="apresentacao-icone" style="opacity: 0;"><span>l</span><span>i</span><span>t</span><span>i</span><span>r</span></h2>
+        </div>
+    </div>
+    <div class="atualizando">
+        <div>
+            <svg>
+                <circle cx="40" cy="40" r="40"></circle>
+            </svg>
+            <p>Carregando...</p>
+        </div>
+    </div><!--atualizando-->
+
+    <div class="analisandoPalavra">
+        <div>
+            <svg>
+                <circle cx="40" cy="40" r="40"></circle>
+            </svg>
+            <p>Analisando...</p>
+        </div>
+    </div> <!--analisando-->
+    
+    <div class="container dicas-container" style="opacity: 0;">
+        <div class="close-icon">
+            <h1><span>l</span><span>i</span><span>t</span><span>i</span><span>r<i>beta</i></span></h1>
+            <span class="btn">Jogar agora!</span>
+        </div>
+        <div class="shadow-fit fit-1"></div>
+        <div class="info-container">
+            <div>
+                <div>
+                    <h2>Como jogar</h2>
+                    <h3>Não são aceitas palavras no plural.</h3><br>
+                    <p>O objetivo do jogo é adivinhar uma palavra dentro de um limite de tentativas. Quanto menos tentativas o jogador utilizar, mais pontos ele ganhará. Durante o jogo, o jogador terá a opção de solicitar dicas, desde que tenha pontos suficientes para adquiri-las, já que as dicas são compradas por meio de pontos ganhos durante a rodada.</p><br/>
+                    <p>O perfil do jogador, incluindo os pontos acumulados e o usuário criado, será disponibilizado apenas durante a sessão de jogo. Ao sair do jogo, o jogador perderá todos os pontos e terá que criar um novo perfil.</p><br />
+                </div>
+                <div>
+                    <h2 class="topics t-1">Pontos</h2>
+                    <ul class="box-exemplo">
+                        <li>b</li>
+                        <li>e</li>
+                        <li>i</li>
+                        <li>j</li>
+                        <li>o</li>
+                    </ul>
+                    <ul class="box-exemplo-certo">
+                        <li>b</li>
+                        <li>o</li>
+                        <li>l</li>
+                        <li>s</li>
+                        <li>a</li>
+                    </ul>
+                    <p>Ao confirmar uma palavra as cores irão indicar se a letra existe ou não na palavra em questão, dependendo da cor o jogador ganhará uma quantia de pontos por cada letra existente na palavra.</p>
+                    
+                    <ul class="box-pontos">
+                        <li>- Esta cor <span class="box-color color_1"></span> indica uma letra existente na palavra que está na posição correta (vale 2 pontos).</li>
+                        <li>- Esta cor <span class="box-color color_2"></span> indica uma letra existente na palavra, porém está na posição incorreta (vale 1 ponto).</li>
+                        <li>- Esta cor <span class="box-color color_3"></span> indica uma letra inexistente na palavra (0 pontos).</li>
+                    </ul><br />
+                </div>
+                <div>
+                    <h2 class="topics t-2">Dicas</h2>
+                
+                    <ul class="box-exemplo-pontos-rodada">
+                        <li>5.0</li>
+                        <li>
+                            <span class="material-symbols-outlined">
+                                keyboard_backspace
+                            </span>
+                        </li>
+                        <li>2.5</li>
+                    </ul>
+                    <p>Durante a rodada o jogador poderá "comprar" dicas utilizando os pontos da rodada. Metade dos pontos serão descontados por cada dica que for solicitada pelo jogador.</p>
+                    <ul class="box-exemplo-pontos" style="margin-bottom: 5px;">
+                        <li><spa class="material-symbols-outlined">book</spa></li>
+                        <li>
+                            <span class="material-symbols-outlined">
+                                keyboard_backspace
+                            </span>
+                        </li>
+                        <li><spa class="material-symbols-outlined">book</spa></li>
+                    </ul>
+                    <ul class="box-exemplo-pontos habilitado" style="margin-top: 5px;">
+                        <li class="purple"><spa class="material-symbols-outlined">border_color</spa></li>
+                        <li>
+                            <span class="material-symbols-outlined">
+                                keyboard_backspace
+                            </span>
+                        </li>
+                        <li><spa class="material-symbols-outlined">border_color</spa></li>
+                    </ul>
+                    <p>Para liberar as dicas o jogador deve ter uma quantia mínima de pontos, sendo necessario 2 pontos para pedir uma letra e 4 pontos para pedir uma dica de texto.</p><br />
+                </div>
+                
+                <div>
+                    <h2 class="topics t-3">Desistência</h2>
+                    <ul class="box-exemplo-desistencia">
+                        <li><spa class="material-symbols-outlined">sentiment_very_dissatisfied</spa></li>
+                    </ul>
+                    <p>Caso o jogador não saiba a palavra, ele terá a opção de desistir da rodada atual e iniciar uma nova. Entretanto, os pontos conquistados na rodada não serão contabilizados em sua pontuação total/rank. Além disso, o jogador perderá 10% dos pontos totais/rank. Se o jogador não acertar a palavra, ocorrerá uma redução de 15% em seus pontos totais/rank.</p><br />
+                </div>
+                <div>
+                    <h2 class="topics t-4">Rank</h2>
+                
+                    <ul class="box-exemplo-ranking">
+                        <li><img src="public/guess-the-word-game-gui-assets/PNG/profile-levels0.png" alt=""/></li>
+                    </ul>
+                    <p>Os pontos só serão contabilizados no rank caso o jogador acerte a palavra.</p>
+                </div>
+                <div>
+                    <h2 class="topics t-5">Desenvolvedores</h2>
+                
+                    <ul class="developers">
+                        <li>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg> Bruno Bafilli</p>
+                            <span>Back-end</span>
+                        </li>
+                        <li>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z"/></svg> Alan Tavares</p>
+                            <span>Front-end</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <select class="theme" id="thema">
+                    <option selected disabled value="-1">Tema</option>
+                    <option value="litir">Litir</option>
+                    <option value="minimalist">Minimalista</option>
+                </select> -->
+            </div>
+            
+        </div><!--info-container-->
+        <div class="shadow-fit fit-2"></div>
+    </div><!--dicas-container-->
+
+    <div class="estatistica">
+        <div class="container">
+            <div class="painel">
+                <h2>Pontuação: <span class="pontuacaoFinal">Pontuacao final</span></h2>
+                <h3 id="ganhouPerdeu"></h3>
+                <h3>Palavra correta: <span class="palavraCorreta">BATATA</span></h3>
+                <p>Letras certas: <span id="letrasCertas">0</span></p>
+                <hr>
+                <p>Letras certas posicao errada: <span id="letrasCertasPosErrada">0</span></p>
+                <hr>
+                <p>Letras erradas: <span id="letrasErradas">0</span></p>
+                <hr>
+                <span class="btn BtnJogarNovamente">Jogar novamente</span>
+            </div>
+        </div>
+    </div><!-- estatisticas -->
+
+    <div class="main" style="display: none;">
+
+        
+
+        <section>
+            
+
+            <div class="container">
+
+                <div class="inciarJogo">
+                    <div class="alerta-usuario">
+                        <p>Por favor, informe um nome de válido! Proibido caracteres especiais.</p>
+                    </div>
+                    <div class="form">
+                        <h2><span>L</span><span>I</span><span>T</span><span>I</span><span>R</span></h2>
+                        <div class="form-control">
+                            <!-- <label for="input-nickName">D:</label> -->
+                            <input type="text" class="nomeUsuario" id="input-nickName" placeholder="Digite seu nome">
+                        </div>
+                        <span class="btn botaoIniciarJogo">Iniciar</span>
+                    </div>
+
+                </div><!--iniciarJogo-->
+
+                <div style="display:none" class="jogoAtivo">
+
+                    <div id="desistir-modal" class="alert" style="display:none">
+                        <div class="box-confirm">
+                            <p>Você perderá todos os pontos que ganhou nesta rodada e 10% dos pontos totais.<br/>
+                                Você deseja desistir?</p>
+                            <div class="box-buttons">
+                                <span>Sim</span>
+                                <span>Não</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <header>
+                        <div class="control-header">
+                            <span class="btn-regras material-symbols-outlined">
+                                question_mark
+                            </span>
+                            <!-- <span class="btn-setting material-symbols-outlined">
+                                settings
+                            </span> -->
+                            <span class="btn-ranking" title="classificação"></span>
+                            <span id="gerarDicaText" class="btn-dica-texto material-symbols-outlined">
+                                <span style="background-image: url(public/guess-the-word-game-gui-assets/PNG/profile-coins.png);"></span>
+                                book
+                            </span>
+                            <span id="gerarDica" class="btn-letra material-symbols-outlined">
+                                border_color
+                            </span>
+                            <span class="desistir material-symbols-outlined">
+                                sentiment_very_dissatisfied
+                            </span>
+                        </div>
+
+                        <div class="modalDicaTexto openModal">
+                            <div>
+                                <span class="close-modal openModal"></span>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="modalConfig">
+                            <div class="config-control">
+                                <div class="header-control">
+                                    <div>
+                                        <span class="btn-setting material-symbols-outlined">
+                                            arrow_back
+                                        </span>
+                                        <h1>Opções de jogo</h1>
+                                    </div>
+                                    <span class="visualiza-regras material-symbols-outlined">
+                                        question_mark
+                                    </span>
+                                </div>
+                                <div style="text-align: center;">
+                                    <span style="font-size: 60px;" class="smile material-symbols-outlined">
+                                        sentiment_satisfied
+                                    </span><br/>
+                                    <p style="font-size: 24px;">Em desenvolvimento</p>
+                                </div>
+                                <!-- <ul>
+                                    <li class="tema">
+                                        <span>Tema atual: <span>Litir</span></span>
+                                        <span class="toggle-tema">
+                                            <i class="indicador"></i>
+                                        </span>
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="overlay"></div>
+                        <div class="modalRegras">
+                            <div class="config-control">
+                                <span class="fechar-regras material-symbols-outlined">
+                                    reply
+                                </span>
+                                <div class="info-container">
+                                    <div>
+                                        <div>
+                                            <h2>Como jogar</h2>
+                                            <h3>Não são aceitas palavras no plural.</h3><br>
+                                            <p>O objetivo do jogo é adivinhar uma palavra dentro de um limite de tentativas. Quanto menos tentativas o jogador utilizar, mais pontos ele ganhará. Durante o jogo, o jogador terá a opção de solicitar dicas, desde que tenha pontos suficientes para adquiri-las, já que as dicas são compradas por meio de pontos ganhos durante a rodada.</p><br/>
+                                            <p>O perfil do jogador, incluindo os pontos acumulados e o usuário criado, será disponibilizado apenas durante a sessão de jogo. Ao sair do jogo, o jogador perderá todos os pontos e terá que criar um novo perfil.</p>
+                                        </div>
+                                        <div>
+                                            <h2 class="topics t-1">Pontos</h2>
+                                            <ul class="box-exemplo">
+                                                <li>b</li>
+                                                <li>e</li>
+                                                <li>i</li>
+                                                <li>j</li>
+                                                <li>o</li>
+                                            </ul>
+                                            <ul class="box-exemplo-certo">
+                                                <li>b</li>
+                                                <li>o</li>
+                                                <li>l</li>
+                                                <li>s</li>
+                                                <li>a</li>
+                                            </ul>
+                                            <p>Ao confirmar uma palavra as cores irão indicar se a letra existe ou não na palavra em questão, dependendo da cor o jogador ganhará uma quantia de pontos por cada letra existente na palavra.</p>
+                                            
+                                            <ul class="box-pontos">
+                                                <li>- Esta cor <span class="box-color color_1"></span> indica uma letra existente na palavra que está na posição correta (vale 2 pontos).</li>
+                                                <li>- Esta cor <span class="box-color color_2"></span> indica uma letra existente na palavra, porém está na posição incorreta (vale 1 ponto).</li>
+                                                <li>- Esta cor <span class="box-color color_3"></span> indica uma letra inexistente na palavra (0 pontos).</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h2 class="topics t-2">Dicas</h2>
+                                        
+                                            <ul class="box-exemplo-pontos-rodada">
+                                                <li>5.0</li>
+                                                <li>
+                                                    <span class="material-symbols-outlined">
+                                                        keyboard_backspace
+                                                    </span>
+                                                </li>
+                                                <li>2.5</li>
+                                            </ul>
+                                            <p>Durante a rodada o jogador poderá "comprar" dicas utilizando os pontos da rodada. Metade dos pontos serão descontados por cada dica que for solicitada pelo jogador.</p>
+                                            <ul class="box-exemplo-pontos" style="margin-bottom: 5px;">
+                                                <li><spa class="material-symbols-outlined">book</spa></li>
+                                                <li>
+                                                    <span class="material-symbols-outlined">
+                                                        keyboard_backspace
+                                                    </span>
+                                                </li>
+                                                <li><spa class="material-symbols-outlined">book</spa></li>
+                                            </ul>
+                                            <ul class="box-exemplo-pontos habilitado" style="margin-top: 5px;">
+                                                <li class="purple"><spa class="material-symbols-outlined">border_color</spa></li>
+                                                <li>
+                                                    <span class="material-symbols-outlined">
+                                                        keyboard_backspace
+                                                    </span>
+                                                </li>
+                                                <li><spa class="material-symbols-outlined">border_color</spa></li>
+                                            </ul>
+                                            <p>Para liberar as dicas o jogador deve ter uma quantia mínima de pontos, sendo necessario 2 pontos para pedir uma letra e 4 pontos para pedir uma dica de texto.</p>
+                                        </div>
+                                        
+                                        <div>
+                                            <h2 class="topics t-3">Desistência</h2>
+                                            <ul class="box-exemplo-desistencia">
+                                                <li><spa class="material-symbols-outlined">sentiment_very_dissatisfied</spa></li>
+                                            </ul>
+                                            <p>Caso o jogador não saiba a palavra, ele terá a opção de desistir da rodada atual e iniciar uma nova. Entretanto, os pontos conquistados na rodada não serão contabilizados em sua pontuação total/rank. Além disso, o jogador perderá 10% dos pontos totais/rank. Se o jogador não acertar a palavra, ocorrerá uma redução de 15% em seus pontos totais/rank.</p>
+                                        </div>
+                                        <div>
+                                            <h2 class="topics t-4">Rank</h2>
+                                        
+                                            <ul class="box-exemplo-ranking">
+                                                <li><img src="public/guess-the-word-game-gui-assets/PNG/profile-levels0.png" alt=""/></li>
+                                            </ul>
+                                            <p>Os pontos só serão contabilizados no rank caso o jogador acerte a palavra.</p>
+                                        </div>
+                                        <div>
+                                            <h2 class="topics t-5">Desenvolvedores</h2>
+                                        
+                                            <ul class="developers">
+                                                <li>
+                                                    <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg> Bruno Bafilli</p>
+                                                    <span>Back-end</span>
+                                                </li>
+                                                <li>
+                                                    <p><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z"/></svg> Alan Tavares</p>
+                                                    <span>Front-end</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            
+                            <li class="gerarDica">
+                                <span class="pontuacaoTotal">0.0</span>
+                                <span class="info">total</span>
+                            </li>
+                            <li class="gerarDica">
+                                <span class="pontuacao">0.0</span>
+                                <span class="info sec-info">rodada</span>
+                            </li>
+                        </ul>
+                    </header>
+
+
+                    <div id="jogo">
+
+
+                        
+
+                        <div class="atualizacao-container">
+                            <div class="msgRankAtualizou">
+                                <svg>
+                                    <circle cy="20" cx="20" r="20"></circle>
+                                </svg>
+                                <p>Reiniciando o rank em 5 segundos</p>
+                            </div>
+                        </div>
+
+                        <div class="ranking">
+                            <!-- <p>
+                                Top 1° da semana: <span class="topSemanaNome">Jabicleiton</span><br />
+                                Pontuação: <span class="topSemanaPontos">500</span>
+                            </p> -->
+                            <span class="close btn-ranking"></span>
+                            <div>
+                                <span class="proximoReset">Próximo reset:</span>
+                                <span class="clock" style="font-weight: bold;"></span>
+                            </div>
+                            <p class="estatusRank">Pontos: <label style="font-weight: bold;" class="meusPontos">0</label>
+                                Rank: <span style="font-weight: bold;" class="meuRank">0</span>
+                                
+                            </p>
+                            <hr>
+                            <ul>
+                                <!-- elementos dinâmicos -->
+                            </ul>
+                        </div>
+
+                        <div class="msgErro"><p>Palavra não permitida</p></div>
+
+                        <div id="box-ul-container">
+                            <!-- Adição de elementos dinâmicos -->
+                        </div>
+                        
+                        <div class="teclado">
+                            <span title="Q">Q</span>
+                            <span title="W">W</span>
+                            <span title="E">E</span>
+                            <span title="R">R</span>
+                            <span title="T">T</span>
+                            <span title="Y">Y</span>
+                            <span title="U">U</span>
+                            <span title="I">I</span>
+                            <span title="O">O</span>
+                            <span title="P">P</span>
+                            <span title="A">A</span>
+                            <span title="S">S</span>
+                            <span title="D">D</span>
+                            <span title="F">F</span>
+                            <span title="G">G</span>
+                            <span title="H">H</span>
+                            <span title="J">J</span>
+                            <span title="K">K</span>
+                            <span title="L">L</span>
+                            <span title="Backspace"><i class="fa-solid fa-delete-left"></i></span>
+                            <span title="Z">Z</span>
+                            <span title="X">X</span>
+                            <span title="C">C</span>
+                            <span title="V">V</span>
+                            <span title="B">B</span>
+                            <span title="N">N</span>
+                            <span title="M">M</span>
+                            <span title="Enter"><i  class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div><!--jogo-->
+                </div><!--jogo-ativo-->
+            </div><!--container-->
+        </section>
+    </div><!--main-->
+
+    <!-- 
+    <script src="js/ATTFUTURA_controleDeJogo.js"></script> -->
+
+    <script>
+        document.querySelector('.close-icon').addEventListener('click', function () {
+
+            document.querySelector('.main').style.display = 'block';
+            document.querySelector('.dicas-container').style.display = 'none';
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="js/Config.js"></script>
+    <script src="js/ModalDica.js"></script>
+    <script src="js/Thema.js"></script>
+    <script src="js/AtualizaRank.js"></script>
+    <script src="js/CadastrarJogador.js"></script>
+    <script src="js/GeradorDePalavra.js"></script>
+    <script src="js/JogarNovamente.js"></script>
+    <script src="js/Palavras.js"></script>
+    <script src="js/JogoTerminou.js"></script>
+    <script src="js/Efeitos.js"></script>
+    <script src="js/DigitaValidaPalavras.js"></script>
+    <script src="js/ConfirmaPalavra.js"></script>
+    <script src="js/StartGame.js"></script>
+    <script src="js/GerarDica.js"></script>
+    <script src="js/ModalControl.js"></script>
+
+
+    <!-- <script src="jsO/Config.js"></script>
+    <script src="jsO/ModalDica.js"></script>
+    <script src="jsO/Thema.js"></script>
+    <script src="jsO/AtualizaRank.js"></script>
+    <script src="jsO/CadastrarJogador.js"></script>
+    <script src="jsO/GeradorDePalavra.js"></script>
+    <script src="jsO/JogarNovamente.js"></script>
+    <script src="jsO/Palavras.js"></script>
+    <script src="jsO/JogoTerminou.js"></script>
+    <script src="jsO/Efeitos.js"></script>
+    <script src="jsO/DigitaValidaPalavras.js"></script>
+    <script src="jsO/ConfirmaPalavra.js"></script>
+    <script src="jsO/StartGame.js"></script>
+    <script src="jsO/GerarDica.js"></script>
+    <script src="jsO/ModalControl.js"></script> -->
+
+</body>
+
+</html>

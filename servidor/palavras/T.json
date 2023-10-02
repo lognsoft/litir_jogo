@@ -1,0 +1,235 @@
+{
+    "palavras_e_dicas": [
+      {
+        "palavra": "TRIVIAL",
+        "dica": "Comum; banal; corriqueiro.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TRÁFEGO",
+        "dica": "Movimento de veículos e pessoas em vias públicas; circulação.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TALENTO",
+        "dica": "Habilidade natural; aptidão; dom.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TRÂMITE",
+        "dica": "Percurso que algo ou alguém faz; andamento de um processo ou procedimento.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TRÁFICO",
+        "dica": "Comércio ilegal de algo, especialmente drogas.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TÉCNICA",
+        "dica": "Conjunto de métodos e procedimentos para realizar algo; habilidade.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TESOURO",
+        "dica": "Grande riqueza; conjunto de objetos preciosos.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TRAIÇÃO",
+        "dica": "Ato de trair; deslealdade.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TRAJETO",
+        "dica": "Percurso; caminho.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TÉCNICO",
+        "dica": "Relativo a uma técnica; especialista em determinado campo.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TRIBUTO",
+        "dica": "Contribuição obrigatória; imposto; homenagem.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TAVERNA",
+        "dica": "Estabelecimento onde se vendem bebidas e alimentos; bar; boteco.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TERAPIA",
+        "dica": "Tratamento de doenças ou distúrbios; processo terapêutico.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TRÁGICO",
+        "dica": "Relativo à tragédia; desastroso; triste.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TESOURA",
+        "dica": "Instrumento cortante, formado por duas lâminas articuladas.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TEMPERO",
+        "dica": "Substância usada para dar sabor aos alimentos; condimento.",
+        "tamanho": 7
+      },
+      {
+        "palavra": "TROUXA",
+        "dica": "Pessoa ingênua ou facilmente enganada.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TIRANO",
+        "dica": "Governante que exerce o poder de forma absoluta e opressiva.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TEORIA",
+        "dica": "Conjunto de princípios fundamentais que explicam algum fenômeno.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TRISTE",
+        "dica": "Que sente ou demonstra tristeza; melancólico.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TENSÃO",
+        "dica": "Estado de tensão; estresse; nervosismo.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TRATAR",
+        "dica": "Cuidar; lidar com algo ou alguém; dar atenção.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TÓXICO",
+        "dica": "Que é venenoso; que contém substâncias nocivas.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TORCER",
+        "dica": "Dobrar ou entortar alguma coisa; desejar intensamente.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TÍTULO",
+        "dica": "Nome ou designação que se coloca em algo.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TAREFA",
+        "dica": "Atividade ou trabalho a ser realizado; missão.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TERROR",
+        "dica": "Sentimento de grande medo; pavor; horror.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TOMATE",
+        "dica": "Fruto comestível da planta do mesmo nome.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TRILHA",
+        "dica": "Caminho estreito.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TRAVAR",
+        "dica": "Prender; fixar; paralisar; interromper.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TREMOR",
+        "dica": "Movimento ou abalo involuntário do corpo.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TAPADO",
+        "dica": "Que é insensato; tolo; ignorante.",
+        "tamanho": 6
+      },
+      {
+        "palavra": "TEMPO",
+        "dica": "Duração das coisas que ocorrem; período; estação do ano.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "TERRA",
+        "dica": "Planeta em que vivemos; solo; chão.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "TÉDIO",
+        "dica": "Sensação de monotonia; falta de interesse ou entusiasmo.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "TEMER",
+        "dica": "Sentir medo; recear.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "TEXTO",
+        "dica": "Escrito; redação; conjunto de palavras ou frases.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "TOSCO",
+        "dica": "Grosseiro; rude; sem refinamento.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "TURMA",
+        "dica": "Grupo de pessoas reunidas; classe escolar.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "TRAJE",
+        "dica": "Vestimenta; roupa.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "TUTOR",
+        "dica": "Pessoa que orienta, ensina ou protege alguém.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "TCHAU",
+        "dica": "Saudação de despedida.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "TRAIR",
+        "dica": "Ser desleal; enganar a confiança de alguém.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "TÁBUA",
+        "dica": "Peça de madeira plana e retangular.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "TRIGO",
+        "dica": "Cereal utilizado para produção de farinha.",
+        "tamanho": 5
+      },
+      {
+        "palavra": "TRAVE",
+        "dica": "Peça de madeira ou ferro que atravessa outra.",
+        "tamanho": 5
+      }
+    ]
+  }
+  

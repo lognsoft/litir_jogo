@@ -1,0 +1,178 @@
+header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px 0;
+   width: 100%;
+   position: relative;
+
+   span.btn-ranking{
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      z-index: 20;
+
+      &::after,
+      &::before{
+         content: '';
+         position: absolute;
+         width: 27px;
+         background-color: $black;
+         height: 3px;
+         transition: .3s;
+      }
+
+      &::after{
+         transform: translateY(-8px);
+         box-shadow: 0 8px $black;
+      }
+
+      &::before{
+         transform: translateY(8px);
+      }
+
+      &.active::after{
+         transform: translateY(0) rotate(-135deg);
+         box-shadow: 0 0 $black;
+      }
+
+      &.active::before{
+         transform: translateY(0) rotate(135deg);
+      }
+
+   }
+
+   .modalDicaTexto{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      background-color: rgba(0,0,0,0.7);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      backdrop-filter: blur(3px);
+      -webkit-backdrop-filter: blur(3px);
+      -moz-backdrop-filter: blur(3px);
+
+      .close-modal{
+         @include button($black,$red);
+         padding: 0;
+         position: absolute;
+         width: 35px;
+         height: 35px;
+         top: 0;
+         left: 100%;
+         transform: translate(-50%,-50%);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border-radius: 50%;
+
+         &::after,
+         &::before{
+            content: '';
+            position: absolute;
+            width: 23px;
+            background-color: $white;
+            height: 3px;
+            transition: .3s;
+            border-radius: 20px;
+         }
+
+         &::after{
+            transform: translateY(0) rotate(-135deg);
+         }
+   
+         &::before{
+            transform: translateY(0) rotate(135deg);
+         }
+      }
+
+      & > div{
+         @include painel;
+         width: 80%;
+         position: relative;
+         overflow: initial;
+         p{
+            font-size: 20px;
+         }
+         &::-webkit-scrollbar{
+            width: 9px;
+         }
+         &::-webkit-scrollbar-thumb{
+            background-color: $yellow;
+            border: 1px solid $black;
+         }
+      }
+   }
+
+   ul{
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      
+      li{
+         @include button($black,$blue);
+         padding: 10px 5px;
+         &.btn-visu{ 
+            display: none;
+            background: $yellow;
+         }
+         &:nth-child(1),
+         &:nth-child(2){
+            color: $blue;
+            background-color: $black;
+            cursor: initial;
+
+            > span{
+               color: $yellow;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1222px){
+   header{
+      // justify-content: space-between;
+      span.btn-ranking{
+         @include button($black,$true);
+         display: flex;
+      }
+
+      // ul{
+      //    li{
+      //       font-size: 13px;
+      //    }
+      // }
+   }
+}
+
+@media screen and (max-width: 574px){
+   header{
+      display: block;
+      flex-wrap: wrap;
+      span.btn-ranking{
+         order: 2;
+         margin-bottom: 10px;
+         position: relative;
+      }
+
+      ul{
+         order: 1;
+         width: 100%;
+         justify-content: center;
+         li{
+            font-size: 13px;
+         }
+      }
+   }
+}

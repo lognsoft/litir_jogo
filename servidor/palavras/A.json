@@ -1,0 +1,358 @@
+{
+  "palavras_e_dicas": [
+    {
+      "palavra": "ABACAXI",
+      "dica": "Fruta tropical de casca dura e sabor doce.",
+      "tamanho": 7
+    },
+    {
+      "palavra": "ACEITAR",
+      "dica": "Concordar com algo ou alguém.",
+      "tamanho": 7
+    },
+    {
+      "palavra": "AMANHÃ",
+      "dica": "O dia depois de hoje.",
+      "tamanho": 7
+    },
+    {
+      "palavra": "ARTISTA",
+      "dica": "Pessoa que pratica ou desempenha uma arte.",
+      "tamanho": 7
+    },
+    {
+      "palavra": "ALIANÇA",
+      "dica": "Anel usado para simbolizar o casamento ou compromisso.",
+      "tamanho": 7
+    },
+    {
+      "palavra": "AMIGO",
+      "tamanho": 5,
+      "dica": "Pessoa com quem se tem afeição e afinidade."
+    },
+    {
+      "palavra": "ABRIR",
+      "tamanho": 5,
+      "dica": "Ato de abrir ou tornar acessível."
+    },
+    {
+      "palavra": "FESTA",
+      "tamanho": 5,
+      "dica": "Comemoração ou evento social comemorativo."
+    },
+    {
+      "palavra": "AFOGA",
+      "tamanho": 5,
+      "dica": "Morrer por sufocamento na água."
+    },
+    {
+      "palavra": "ALTOS",
+      "tamanho": 5,
+      "dica": "De grande altura; elevados."
+    },
+    {
+      "palavra": "PIANO",
+      "tamanho": 5,
+      "dica": "Instrumento musical de cordas percutidas."
+    },
+    {
+      "palavra": "AFETO",
+      "tamanho": 5,
+      "dica": "Sentimento de afeição, carinho ou ternura por alguém ou algo."
+    },
+    {
+      "palavra": "ANEXO",
+      "tamanho": 5,
+      "dica": "Documento ou informação que acompanha outro documento principal."
+    },
+    {
+      "palavra": "AFAGO",
+      "tamanho": 5,
+      "dica": "Carícia; gesto de demonstração de afeto ou amor."
+    },
+    {
+      "palavra": "ACASO",
+      "tamanho": 5,
+      "dica": "Por acidente; sem planejamento; ao acidente."
+    },
+    {
+      "palavra": "AJUDA",
+      "tamanho": 5,
+      "dica": "Assistência; ato de ajudar ou auxiliar alguém."
+    },
+    {
+      "palavra": "ADIAR",
+      "tamanho": 5,
+      "dica": "Postergar; deixar para outro momento; retardar."
+    },
+    {
+      "palavra": "ATUAR",
+      "tamanho": 5,
+      "dica": "Desempenhar um papel ou função; agir; representar."
+    },
+    {
+      "palavra": "AMPLO",
+      "tamanho": 5,
+      "dica": "Grande extensão ou espaço; abrangente; vasto."
+    },
+    {
+      "palavra": "ADEUS",
+      "tamanho": 5,
+      "dica": "Expressão de despedida; até logo; tchau."
+    },
+    {
+      "palavra": "ACESO",
+      "tamanho": 5,
+      "dica": "Que está queimando ou iluminado"
+    },
+    {
+      "palavra": "ANDAR",
+      "tamanho": 5,
+      "dica": "Locomoção a pé; caminhar."
+    },
+    {
+      "palavra": "ASTÚCIA",
+      "tamanho": 7,
+      "dica": "Habilidade de agir com esperteza e perspicácia."
+    },
+    {
+      "palavra": "ALEGRIA",
+      "tamanho": 7,
+      "dica": "Sentimento de grande satisfação ou contentamento."
+    },
+    {
+      "palavra": "AMBIÇÃO",
+      "tamanho": 7,
+      "dica": "Desejo intenso de conquistar algo ou alcançar objetivos."
+    },
+    {
+      "palavra": "ASSENTO",
+      "tamanho": 7,
+      "dica": "Lugar para sentar; cadeira ou banco."
+    },
+    {
+      "palavra": "AFEIÇÃO",
+      "tamanho": 7,
+      "dica": "Sentimento de carinho, afeto ou estima por alguém ou algo."
+    },
+    {
+      "palavra": "ATITUDE",
+      "tamanho": 7,
+      "dica": "Comportamento ou postura diante de situações ou desafios."
+    },
+    {
+      "palavra": "ARCAICO",
+      "tamanho": 7,
+      "dica": "Que pertence a uma época remota do passado."
+    },
+    {
+      "palavra": "ATENÇÃO",
+      "tamanho": 7,
+      "dica": "Foco mental; cuidado; observação."
+    },
+    {
+      "palavra": "ACENDER",
+      "tamanho": 7,
+      "dica": "Colocar fogo; tornar-se iluminado."
+    },
+    {
+      "palavra": "AVAREZA",
+      "tamanho": 7,
+      "dica": "Excessiva ganância por riquezas; avidez por dinheiro."
+    },
+    {
+      "palavra": "ACESSAR",
+      "tamanho": 7,
+      "dica": "Obter acesso a informações ou recursos através de um sistema ou dispositivo."
+    },
+    {
+      "palavra": "ATENDER",
+      "tamanho": 7,
+      "dica": "Dar resposta; prestar assistência ou serviço."
+    },
+    {
+      "palavra": "AGREGAR",
+      "tamanho": 7,
+      "dica": "Juntar ou reunir elementos; agregar valor ou pessoas a algo."
+    },
+    {
+      "palavra": "ACORDAR",
+      "tamanho": 7,
+      "dica": "Sair do sono; despertar."
+    },
+    {
+      "palavra": "AUXÍLIO",
+      "tamanho": 7,
+      "dica": "Ajuda; assistência; socorro."
+    },
+    {
+      "palavra": "ADMIRAR",
+      "tamanho": 7,
+      "dica": "Sentir admiração; achar algo ou alguém extraordinário."
+    },
+    {
+      "palavra": "ABACAXI",
+      "tamanho": 7,
+      "dica": "Fruta tropical de casca espinhosa e polpa doce."
+    },
+    {
+      "palavra": "ATUAÇÃO",
+      "tamanho": 7,
+      "dica": "Ato de atuar; desempenho de um papel ou função."
+    },
+    {
+      "palavra": "ARMÁRIO",
+      "tamanho": 7,
+      "dica": "Móvel com prateleiras para guardar roupas ou objetos."
+    },
+    {
+      "palavra": "AMOROSO",
+      "tamanho": 7,
+      "dica": "Caracterizado pelo amor; afetuoso; carinhoso."
+    },
+    {
+      "palavra": "AGITADO",
+      "tamanho": 7,
+      "dica": "Que está em constante movimento ou agitação."
+    },
+    {
+      "palavra": "ARBUSTO",
+      "tamanho": 7,
+      "dica": "Planta de pequeno porte, com galhos ramificados desde a base."
+    },{
+      "palavra": "ANSEIO",
+      "tamanho": 6,
+      "dica": "Desejo ardente; aspiração intensa por algo."
+    },
+    {
+      "palavra": "ADORNO",
+      "tamanho": 6,
+      "dica": "Enfeite; ornamento utilizado para embelezar algo."
+    },
+    {
+      "palavra": "ASTUTO",
+      "tamanho": 6,
+      "dica": "Esperto; perspicaz; sagaz."
+    },
+    {
+      "palavra": "ALOCAR",
+      "tamanho": 6,
+      "dica": "Destinar ou atribuir um local ou função específica para algo ou alguém."
+    },
+    {
+      "palavra": "ACENTO",
+      "tamanho": 6,
+      "dica": "Sinal gráfico que modifica a pronúncia de uma vogal."
+    },
+    {
+      "palavra": "APATIA",
+      "tamanho": 6,
+      "dica": "Falta de interesse; indiferença; falta de energia."
+    },
+    {
+      "palavra": "ADEPTO",
+      "tamanho": 6,
+      "dica": "Seguidor; pessoa que apoia uma ideia, crença ou grupo."
+    },
+    {
+      "palavra": "AMANHÃ",
+      "tamanho": 6,
+      "dica": "Dia seguinte ao atual; o futuro próximo."
+    },
+    {
+      "palavra": "ACORDO",
+      "tamanho": 6,
+      "dica": "Acordo ou combinação entre partes; harmonia."
+    },
+    {
+      "palavra": "ABISMO",
+      "tamanho": 6,
+      "dica": "Grande precipício; profunda depressão."
+    },
+    {
+      "palavra": "AURORA",
+      "tamanho": 6,
+      "dica": "Momento do nascer do sol; início de algo."
+    },
+    {
+      "palavra": "AMÁVEL",
+      "tamanho": 6,
+      "dica": "Que tem amabilidade; gentil; simpático."
+    },
+    {
+      "palavra": "AGENTE",
+      "tamanho": 6,
+      "dica": "Indivíduo que atua em nome de outro; representante."
+    },
+    {
+      "palavra": "ALEGRE",
+      "tamanho": 6,
+      "dica": "De bom humor; contente; feliz."
+    },
+    {
+      "palavra": "ANIMAL",
+      "tamanho": 6,
+      "dica": "Ser vivo que possui capacidade de locomoção; criatura viva."
+    },
+    {
+      "palavra": "ASTUTA",
+      "tamanho": 6,
+      "dica": "Feminino de astuto; esperta; sagaz."
+    },
+    {
+      "palavra": "AÇÚCAR",
+      "tamanho": 6,
+      "dica": "Substância doce extraída principalmente da cana-de-açúcar."
+    },
+    {
+      "palavra": "ATRITO",
+      "tamanho": 6,
+      "dica": "Conflito ou discussão entre pessoas; desentendimento."
+    },
+    {
+      "palavra": "ALFACE",
+      "tamanho": 6,
+      "dica": "Planta hortícola de folhas verdes, usada em saladas."
+    },
+    {
+      "palavra": "ARANHA",
+      "tamanho": 6,
+      "dica": "Aracnídeo comum; conhecido por produzir teias."
+    },
+    {
+      "palavra": "ATELIÊ",
+      "tamanho": 6,
+      "dica": "Local de trabalho de um artista; estúdio."
+    },
+    {
+      "palavra": "ABELHA",
+      "tamanho": 6,
+      "dica": "Inseto polinizador que produz mel."
+    },
+    {
+      "palavra": "ALÍVIO",
+      "tamanho": 6,
+      "dica": "Sensação de tranquilidade e alívio de um desconforto ou aflição."
+    },
+    {
+      "palavra": "AUTORA",
+      "tamanho": 6,
+      "dica": "Feminino de autor; mulher que escreve ou cria obras literárias."
+    },
+    {
+      "palavra": "AMEIXA",
+      "tamanho": 6,
+      "dica": "Fruto da ameixeira; fruta de casca fina e polpa suculenta."
+    },
+    {
+      "palavra": "ATALHO",
+      "tamanho": 6,
+      "dica": "Caminho mais curto ou rápido para se chegar a algum lugar."
+    },
+    {
+      "palavra": "ALMEJO",
+      "tamanho": 6,
+      "dica": "Desejo ou anseio intenso por algo."
+    }
+  ]
+}

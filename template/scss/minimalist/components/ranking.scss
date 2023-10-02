@@ -1,0 +1,58 @@
+.ranking{
+   border-radius: 5px;
+   z-index: 1000;
+   color: $black;
+   position: absolute;
+   width: 100%;
+   max-width: 250px;
+   background-color: $blue;
+   border: 1px solid $black;
+   padding: 20px 10px;
+   left: 20px;
+   user-select: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+
+   span{
+      display: inline-block;
+   }
+   p{
+      margin-bottom: 5px;
+      &.clock{
+         margin-bottom: 10px;
+      }
+   }
+   hr{
+      border: 1px solid $black;
+   }
+
+   ul{
+      list-style-type: none;
+      li{
+         padding: 5px;
+         font-size: 15px;
+
+         img{
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+         }
+
+         &.minhaPosicaoNoRank{
+            background-color: $black;
+            color: $yellow;
+            // -webkit-text-stroke: $blue;
+            // -webkit-text-stroke-width: 0.3px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1222px) {
+   .ranking{
+      display: none;
+      &.active{
+         display: block;
+      }
+   }
+}

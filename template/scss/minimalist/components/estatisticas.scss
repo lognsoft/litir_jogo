@@ -1,0 +1,51 @@
+.estatistica{
+   display: none;
+   position: fixed;
+   z-index: 3000;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgb(0, 0, 0,0.7);
+   backdrop-filter: blur(3px);
+   -webkit-backdrop-filter: blur(3px);
+   .container{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .painel{
+         @include painel;
+         border: 2px solid $black;
+
+         h2{
+            margin-bottom: 10px;
+         }
+         h3{
+            margin-bottom: 5px;
+            &:last-of-type{
+               display: inline-block;
+               margin-bottom: 15px;
+               border-bottom: 3px solid $black
+            }
+         }
+         p{
+            // padding-bottom: 2px;
+            position: relative;
+
+            >span{
+               font-weight: bold;
+            }
+         }
+         hr{
+            margin: 6px 0;
+            border: 1px solid $black
+         }
+
+         span.btn{
+            @include button($white,$black);
+            margin-top: 20px;
+         }
+      }
+   }
+}

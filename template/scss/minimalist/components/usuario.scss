@@ -1,0 +1,43 @@
+.inciarJogo{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .form{
+      text-align: right;
+      width: 100%;
+      max-width: 500px;
+      padding: 20px 10px;
+      label{
+         text-align: left;
+         display: block;
+         cursor: pointer;
+         font-size: 20px;
+         transition: .2s;
+         color: $black;
+      }
+      input[type=text]{
+         width: 100%;
+         height: 0;
+         border: none;
+         border-bottom: 1px solid $black;
+         display: inline-block;
+         margin-bottom: 20px;
+         outline: none;
+         background-color: transparent;
+         color: $black;
+         font-size: 16px;
+         transition: .2s;
+
+         &:focus{
+            padding: 10px;
+            height: auto;
+         }
+      }
+
+      span.btn{
+         @include button;
+      }
+   }
+}
