@@ -50,6 +50,7 @@ function calculoDePontos() {
 }
 
 async function verificaPalavraSePalavraEstaCorreta(estatusDoJogo) {
+
     AtualizarRankingFrontEnd(estatusDoJogo);
 
     let linhaFront = ultimoClicado.parentNode;
@@ -153,7 +154,7 @@ function avancaProximaLinha() {
 }
 
 function ascenteTecladoLetraCorreta() {
-
+    
     let tecladoVirtualFront = document.querySelectorAll(".teclado span");
     let teclasPorLetra = {};
 
@@ -193,6 +194,7 @@ function ascenteTecladoLetraCorreta() {
 }
 
 async function verificaSePalavraExiste(palavraPreenchida) {
+    
     ////////////
     //se a palavra estiver correta
 
@@ -208,14 +210,12 @@ async function verificaSePalavraExiste(palavraPreenchida) {
 
     if (!palavraExiste)
         return false;
-
-
     //console.log(statusTentativa)
 
     await axios.post(`${ROUT.URL}/confirmarPalavra`, { jogador: jogador, palavraTentada: palavraExiste }).then((response) => {
+        
         statusTentativa = response;
-
-       
+        
     }).catch((error) => {
 
         //reinicia o jogo!

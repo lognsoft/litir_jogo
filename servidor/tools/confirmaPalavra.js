@@ -1,7 +1,7 @@
 const unidecode = require('unidecode');
 
 module.exports = function confirmarPalavra(jogadorPalavra, tentativaPalavra) {
-
+    
     //console.log(tentativaPalavra.Palavra, "TENTATIVA");//AGORA A PALAVRA VEM COM ACENTO! BORA RESOLVER O RESTO.
 
     //let tentativaPalavraSemUnicode = tentativaPalavra.Palavra.toUpperCase();

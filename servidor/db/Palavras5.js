@@ -62,7 +62,6 @@ module.exports = class Palavras5 {
     async buscarPalavraPorNome(palavra) {
         return new Promise((resolve, reject) => {
             this.dbPalavra.findOne({ Palavra: palavra }).then((callBack) => {
-
                 resolve(callBack);
             }).catch((err) => {
                 reject(err);

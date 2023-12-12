@@ -52,33 +52,34 @@ setInterval(() => {
 // _(jogadores);
 
 const allowTwoIPsAndURLMiddleware = (req, res, next) => {
-    // //definir os endereços IP permitidos
-    // const allowedIPs = ['45.234.55.192', '201.92.230.11'];
-    // //obter o endereço IP do cliente que está consumindo a rota
-    // const clientIP = req.headers['x-forwarded-for']?.split(',')[0].trim() || '::1';
-    // //definir a URL permitida
-    // const allowedURL = 'https://litir.com.br';
-
-    // const allowedURL1 = 'https://litir.io';
-
-    // const clientURL = req.headers.origin;
-
-    // console.log(clientURL, allowedURL, clientIP, allowedURL1);
-
-    // if (allowedIPs.includes(clientIP) || clientURL === allowedURL || clientURL ===  allowedURL1) {
-    //     next();
-    // } else {
-    //     res.status(403).send('Acesso negado.');
-    // }
+    /* //definir os endereços IP permitidos
+     const allowedIPs = ['45.234.55.192', '201.92.230.11'];
+     //obter o endereço IP do cliente que está consumindo a rota
+     const clientIP = req.headers['x-forwarded-for']?.split(',')[0].trim() || '::1';
+     //definir a URL permitida
+     const allowedURL = 'https://litir.com.br';
+    
+     const allowedURL1 = 'https://litir.io';
+    
+     const clientURL = req.headers.origin;
+    
+     console.log(clientURL, allowedURL, clientIP, allowedURL1);
+    
+     if (allowedIPs.includes(clientIP) || clientURL === allowedURL || clientURL ===  allowedURL1) {
+         next();
+     } else {
+         res.status(403).send('Acesso negado.');
+    }*/
     next();
 }
 
 app.post('/confirmarPalavra', allowTwoIPsAndURLMiddleware, async (req, res) => {
     
+    console.log("FAFAFA");
 
     let jogadorPalavra = palavrasGeradas.find(x => x.jogadorId === req.body.jogador.id);
     let jogadorEncontrado = jogadores.find(x => x.id === req.body.jogador.id);
-
+    
     if (jogadorEncontrado) {
 
             //console.log(req.body.palavraTentada, "teste");
@@ -171,27 +172,31 @@ app.put('/aprenderPalavra', allowTwoIPsAndURLMiddleware, async (req, res) => {
     const palavraTentada = req.body.palavraTentada.toLowerCase();
 
     let encontrouPalavra = await verificaSePalavraExiste();
-
+    
     //let palavrao = piii.has(req.body.palavraTentada);
 
     let palavrao = filtroPalavrao(req.body.palavraTentada)
-
-   
+    
     if (palavrao) {
         res.send(false);
 
     } else if (encontrouPalavra == null) {
 
         // Código a ser executado se a palavra não for encontrada
-
         await axios.get(`https://www.dicio.com.br/${palavraTentada}`)
             .then(async (response) => {
 
                 let dica;
                 let html = response.data;
+
                 const $ = cheerio.load(html);
-                let palavra = $('h1[itemprop="name"]').html().split("<")[0].replace(/\s/g, '');
-                
+
+                let paginaHtml = $.html();
+
+                let textoParagrafo = $('h1').text();
+
+                let palavra = textoParagrafo.trim();
+
                 //console.log("Singular: "+palavra.slice(0, palavra.length - 1));
                 //Singular:<b><ahref="/ameixa/">ameixa</a>
                 
@@ -201,9 +206,11 @@ app.put('/aprenderPalavra', allowTwoIPsAndURLMiddleware, async (req, res) => {
                 const existePlural = html.includes(`plural`);
                 const existeSingular = html.includes(`singular`);
                 const palavraCoerente = EhSingular || EhPlural || existePlural || existeSingular;
-                const aprenderPalavra = false;
+                const aprenderPalavra = true; //APRENDE A PALAVRA
                 //Verifica se a palavra é plural
                 //verifica se a palavra tem significado
+                
+                console.log(EhPlural);
                 if(EhPlural || NaoTemSignificado){
                     res.send(false);
                 } else {
@@ -235,6 +242,7 @@ app.put('/aprenderPalavra', allowTwoIPsAndURLMiddleware, async (req, res) => {
                 }
             })
             .catch(function (error) {
+                console.log(error);
                 res.send(false);
             });
     } else {
