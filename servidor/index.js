@@ -75,8 +75,6 @@ const allowTwoIPsAndURLMiddleware = (req, res, next) => {
 
 app.post('/confirmarPalavra', allowTwoIPsAndURLMiddleware, async (req, res) => {
     
-    console.log("FAFAFA");
-
     let jogadorPalavra = palavrasGeradas.find(x => x.jogadorId === req.body.jogador.id);
     let jogadorEncontrado = jogadores.find(x => x.id === req.body.jogador.id);
     
