@@ -52,7 +52,7 @@ setInterval(() => {
 // _(jogadores);
 
 const allowTwoIPsAndURLMiddleware = (req, res, next) => {
-    /* //definir os endereços IP permitidos
+    //definir os endereços IP permitidos
      const allowedIPs = ['45.234.55.192', '201.92.230.11'];
      //obter o endereço IP do cliente que está consumindo a rota
      const clientIP = req.headers['x-forwarded-for']?.split(',')[0].trim() || '::1';
@@ -69,8 +69,8 @@ const allowTwoIPsAndURLMiddleware = (req, res, next) => {
          next();
      } else {
          res.status(403).send('Acesso negado.');
-    }*/
-    next();
+    }
+    //next();
 }
 
 app.post('/confirmarPalavra', allowTwoIPsAndURLMiddleware, async (req, res) => {
